@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>澤井珈琲ドリップコーヒー オールスターズ30｜ドリップバッグ30種類の飲み比べ</title>
+<meta name="description" content="澤井珈琲ドリップコーヒー オールスターズ30。ドリップバッグ30袋入り、30種類ぜんぶ違う珈琲を飲み比べできるセットです。2,700円（税込）。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c4161c;
+  --red-dk:#9c0f14;
+  --cream:#f7eedf;
+  --cream-dk:#efe0c6;
+  --brown:#3a2318;
+  --brown-lt:#6b4a38;
+  --gold:#c9a04e;
+  --ink:#2a1a12;
+  --white:#fff;
+  --cw:1040px;
+  /* 数字・英字用：Jost（Webフォント）→ Helvetica */
+  /* 日本語：ヒラギノ角ゴ（Mac・iPhone）→ Noto Sans JP（Windows・Androidなど） */
+  --jp:"Jost","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+  --num:"Jost","Helvetica Neue",Helvetica,Arial,"Hiragino Sans","Noto Sans JP",sans-serif;
+  /* 4つの味わいグループの色 */
+  --cat-a:#e58a5f;
+  --cat-b:#d4628b;
+  --cat-c:#b8862b;
+  --cat-d:#4a2c1f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--jp);
+  font-feature-settings:"palt";  /* 全角かっこ・句読点の余白を詰める */
+  color:var(--ink);background:var(--cream);line-height:1.8;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:var(--cw);margin:0 auto;padding:0 24px}
+
+/* ===== スクロールで出てくる ===== */
+.rv{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.on{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+
+/* ===== ヘッダー ===== */
+.hd{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 24px;background:#d0121c;box-shadow:0 2px 12px rgba(80,0,0,.18)}  /* 背景はロゴ画像の赤に合わせる */
+.hd.solid{background:#d0121c}
+.hd-logo{display:block;line-height:0}
+.hd-logo img{display:block;height:36px;width:auto}
+
+.hd-cta{background:var(--white);color:#d0121c;font-weight:800;font-size:13px;padding:8px 18px;border-radius:999px;text-decoration:none;transition:transform .2s}
+
+.hd-cta:hover{transform:scale(1.05)}
+.hd-sp-sub{display:none}
+/* メニュー（PC：ヘッダーに横並び／スマホ：ハンバーガーで開く） */
+.hd-nav{margin-left:auto;margin-right:20px}
+.hd-nav ul{display:flex;gap:22px;list-style:none}
+.hd-nav a{color:var(--white);font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;opacity:.92}
+.hd-nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.hd-nav-cta{display:none}
+.hd-burger{display:none}
+html{scroll-padding-top:72px}
+@media (max-width:1100px){.hd-nav ul{gap:14px}.hd-nav a{font-size:12px}}
+@media (min-width:769px){.hd-nav{display:none}}  /* PCのメニューはFVの下（.pc-nav） */
+.hd-ttl{white-space:nowrap;margin:0 auto 0 22px;color:var(--white);font-weight:800;font-size:15px;letter-spacing:.06em;padding-left:22px;border-left:1px solid rgba(255,255,255,.45);line-height:1.4}
+@media (max-width:1100px){.hd-ttl{font-size:13px;margin-left:16px;padding-left:16px}}
+@media (max-width:960px){.hd-ttl{display:none}}
+/* PC：FVの下のメニュー */
+.pc-nav{background:#fff;border-bottom:1px solid var(--cream-dk);position:relative;z-index:5}
+.pc-nav ul{display:flex;justify-content:center;flex-wrap:wrap;list-style:none;max-width:var(--cw);margin:0 auto;padding:0 24px}
+.pc-nav li{flex:1;text-align:center}
+.pc-nav li+li{border-left:1px solid var(--cream-dk)}
+.pc-nav a{display:block;padding:20px 8px;color:var(--brown);font-weight:800;font-size:15px;text-decoration:none;transition:color .2s,background .2s;white-space:nowrap}
+.pc-nav a:hover{color:var(--red);background:var(--cream)}
+@media (max-width:1100px){.pc-nav a{font-size:13px;padding:18px 4px}}
+@media (max-width:768px){.pc-nav{display:none}}
+@media (max-width:768px){
+  html{scroll-padding-top:70px}
+  .hd-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 10px}
+  .hd-burger span{display:block;height:2px;background:var(--white);border-radius:2px;transition:transform .3s,opacity .3s}
+  .hd.menu-on .hd-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hd.menu-on .hd-burger span:nth-child(2){opacity:0}
+  .hd.menu-on .hd-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .hd-nav{display:block;position:fixed;left:0;right:0;top:64px;bottom:0;margin:0;background:#d0121c;padding:12px 24px 40px;overflow:auto;opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .25s,transform .25s,visibility .25s}
+  .hd.menu-on .hd-nav{opacity:1;visibility:visible;transform:none}
+  .hd-nav ul{flex-direction:column;gap:0}
+  .hd-nav li{border-bottom:1px solid rgba(255,255,255,.25)}
+  .hd-nav a{display:block;font-size:17px;padding:17px 4px;opacity:1}
+  .hd-nav a:hover{text-decoration:none}
+  .hd-nav-cta{display:block!important;margin-top:28px;text-align:center;background:var(--white);color:#d0121c!important;border-radius:999px;padding:16px!important;font-weight:800}
+}
+/* スマホ：FVの下の「ご購入はこちら」ボタン（FVの背景と同じ赤） */
+.sp-cta{display:none}
+@media (max-width:768px){
+  .sp-cta{display:block;background:var(--cream);padding:22px 16px 6px}
+  .sp-cta a{display:block;background:#c4171b;color:var(--white);font-weight:800;font-size:18px;letter-spacing:.06em;text-align:center;text-decoration:none;border-radius:999px;padding:17px;box-shadow:0 5px 0 var(--red-dk)}
+}
+
+/* ===== FV（左右2色に分けたヒーロー） ===== */
+.fv{position:relative;overflow:hidden;background:var(--red);display:grid;grid-template-columns:minmax(0,440px) minmax(0,400px);justify-content:center;align-items:center;column-gap:clamp(24px,4vw,64px);padding:0 max(9vw,40px);min-height:min(100vh,800px);min-height:min(100svh,800px)}
+.fv-l{position:relative;z-index:2;color:var(--white);display:flex;flex-direction:column;justify-content:center;padding:110px 0 70px}
+.fv-tag{display:inline-flex;gap:8px;align-items:center;align-self:flex-start;border:2px solid var(--white);border-radius:999px;padding:4px 16px;font-weight:700;font-size:14px;letter-spacing:.08em}
+.fv-tag i{width:8px;height:8px;border-radius:50%;background:var(--gold);animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.2}}
+.fv-num{font-family:var(--num);font-weight:700;line-height:.9;font-size:clamp(110px,12vw,190px);letter-spacing:-.04em;margin:18px 0 0;display:flex;align-items:flex-end;gap:10px}
+.fv-num small{white-space:nowrap;font-family:var(--jp);font-weight:800;font-size:.22em;letter-spacing:0;line-height:1.3;padding-bottom:.18em}
+.fv-h1{font-weight:800;font-size:clamp(24px,2.5vw,36px);line-height:1.4;margin-top:14px;letter-spacing:.02em}
+.fv-sub{margin-top:16px;font-size:clamp(14px,1.1vw,16px);font-weight:500;opacity:.92}
+.fv-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;border-radius:999px;padding:14px 28px;text-decoration:none;transition:transform .2s,box-shadow .2s;font-size:15px}
+.btn:hover{transform:translateY(-3px)}
+.btn-w{background:var(--white);color:var(--red);box-shadow:0 6px 0 var(--red-dk)}
+.btn-line{border:2px solid var(--white);color:var(--white)}
+.btn-r{background:var(--red);color:var(--white);box-shadow:0 6px 0 var(--red-dk)}
+/* 背景で回る湯気の輪 */
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.fv-r{position:relative;align-self:stretch;display:flex;align-items:flex-end;justify-content:center;padding-top:170px}
+.fv-stage{position:absolute;inset:0}
+/* 落ちてくるドリップバッグ */
+.drop{position:absolute;top:-120px;width:58px;animation:drop var(--t,3.2s) cubic-bezier(.45,.05,.55,.95) forwards}
+@keyframes drop{
+  0%{transform:translateY(0) rotate(var(--r0,-20deg))}
+  70%{opacity:1}
+  100%{transform:translateY(var(--y,70vh)) rotate(var(--r1,15deg));opacity:0}
+}
+.fv-box{position:relative;z-index:2;width:min(70%,330px);margin:0 0 72px}
+.fv-box .box{z-index:1}
+.bouquet{position:absolute;left:0;right:0;top:0;height:0;z-index:0}
+.bq{position:absolute;left:50%;bottom:calc(var(--s)*-.7);width:var(--s);transform-origin:50% 100%;transform:translate(-50%,70%) scale(.7);opacity:0;transition:transform .8s cubic-bezier(.2,1.6,.4,1),opacity .15s}
+.bq.out{transform:translate(calc(-50% + var(--x)),calc(var(--rise)*-1)) rotate(var(--r));opacity:1}
+.bq .bag-en{font-size:calc(var(--s)*.15);letter-spacing:0}
+.box{position:relative;background:linear-gradient(90deg,rgba(196,23,27,.26) 50%,transparent 50%) 0 0/30px 30px,linear-gradient(rgba(196,23,27,.26) 50%,transparent 50%) 0 0/30px 30px,#fffaf0;border-radius:16px 16px 26px 26px;aspect-ratio:1.5/1;box-shadow:inset 0 0 0 5px #fffaf0,inset 0 -14px 0 rgba(58,35,24,.06),0 26px 34px -16px rgba(70,0,0,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--brown);text-align:center}
+.box::before{content:"";position:absolute;left:-5%;right:-5%;top:-12%;height:19%;background:#fffaf0 radial-gradient(circle,var(--red) 2.2px,transparent 2.6px) 0 0/16px 16px;border-radius:14px;border-bottom:5px solid var(--red);box-shadow:0 6px 0 rgba(0,0,0,.08)}
+.box-ribbon{position:absolute;left:50%;top:-12%;bottom:0;width:13%;transform:translateX(-50%);background:#fffaf0;border-left:3px solid var(--red);border-right:3px solid var(--red)}
+.box-bow{position:absolute;left:50%;top:-4%;z-index:2;width:28%;transform:translateX(-50%);filter:drop-shadow(0 3px 0 rgba(0,0,0,.12))}
+.box-bow svg{display:block;width:100%;height:auto}
+@keyframes fukuBob{50%{transform:rotate(-6deg) scale(1.04)}}
+.fv-count{position:absolute;left:0;right:0;bottom:24px;z-index:4;margin:0;text-align:center;color:var(--white);font-family:var(--num);font-weight:700;font-size:26px;letter-spacing:.08em;line-height:1.2}
+.fv-count.done{bottom:5%;font-size:clamp(40px,12.6cqw,98px);font-weight:700;letter-spacing:0;line-height:1;color:#ffe544;animation:doneIn .6s cubic-bezier(.2,1.6,.4,1)}
+@keyframes doneIn{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+.box.bump{animation:bump .35s}
+/* 30袋そろったら：ぶるぶる→パーン！ */
+.box{cursor:pointer}
+.box::before{transition:transform .7s cubic-bezier(.3,.6,.4,1),opacity .7s ease-in}
+.box.charge{animation:shake .08s linear 8}
+@keyframes shake{25%{transform:translate(-3px,1px) rotate(-1.5deg)}75%{transform:translate(3px,-1px) rotate(1.5deg)}}
+.box::before{transform-origin:8% 100%}
+.box.open::before{transform:translate(-30%,-420%) rotate(-35deg);opacity:0}
+.box-bow{transition:transform .5s cubic-bezier(.2,1.6,.4,1)}
+.box.open .box-bow{transform:translateX(-50%) scale(1.12)}
+.box-ribbon{transition:top .3s}
+.box.open .box-ribbon{top:0}
+.burst-layer{position:absolute;inset:0;z-index:3;pointer-events:none}
+.burst{position:absolute;width:var(--s,52px);margin:calc(var(--s,52px)*-.67) 0 0 calc(var(--s,52px)*-.5);transform:translate(var(--fx),var(--fy)) scale(.2);opacity:0;transition:transform 1s cubic-bezier(.15,1.25,.35,1),opacity .2s}
+.burst.out{transform:rotate(var(--r)) scale(1);opacity:1}
+.burst .bag-en{font-size:calc(var(--s)*.16);letter-spacing:0;margin:2px 0}
+.burst .bag-brand{font-size:calc(var(--s)*.11)}
+.burst .bag-dot{width:calc(var(--s)*.22);height:calc(var(--s)*.22);margin-top:1px}
+.flash{position:absolute;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;z-index:2;pointer-events:none;
+  background:repeating-conic-gradient(from 0deg,rgba(201,160,78,.55) 0 8deg,transparent 8deg 22deg);
+  animation:flash 1.1s ease-out forwards}
+@keyframes flash{0%{transform:scale(0) rotate(0);opacity:1}60%{opacity:.9}100%{transform:scale(55) rotate(40deg);opacity:0}}
+.conf{position:absolute;width:8px;height:14px;border-radius:2px;z-index:3;pointer-events:none;animation:conf var(--t) cubic-bezier(.2,.6,.4,1) forwards}
+@keyframes conf{0%{transform:translate(0,0) rotate(0)}40%{opacity:1}100%{transform:translate(var(--cx),var(--cy)) rotate(var(--cr));opacity:0}}
+@keyframes bump{40%{transform:scale(1.04,.96)}70%{transform:scale(.98,1.02)}}
+@keyframes line{0%{transform:scaleY(0)}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ===== PCのFV（画像） ===== */
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.fv-img{padding-top:64px;background:#fff}
+.fv-img-in{position:relative;overflow:hidden}
+.fv-img img{display:block;width:100%;height:auto}
+/* 左の2列（画像幅2000pxのうち x=45〜175 と x=199〜328 の位置） */
+.fv-col{position:absolute;top:0;bottom:0;width:6.5%;overflow:hidden}
+.fv-col.c1{left:4.75%}.fv-col.c2{left:12.45%}
+/* 動きはJS（flowStrip）で毎フレーム位置を指定。CSSアニメーションだとiPhoneのSafariで画面外だった部分が描かれず、袋が消えるため */
+.fv-track{will-change:transform}
+.fv-track .bag{margin-bottom:.9vw}
+.fv-track .bag-en{font-size:clamp(8px,.75vw,12px);letter-spacing:0}
+.fv-track .bag-brand{font-size:clamp(6px,.5vw,8px)}
+@media (min-width:769px){
+  .fv{display:none}
+
+
+
+}
+@media (max-width:768px){.fv-img{display:none}}
+/* ===== スマホのFV（画像＋流れる2列） ===== */
+.fv-sp{display:none;padding-top:64px;background:#c4171b}
+.fv-sp-in{position:relative;overflow:hidden}
+.fv-sp-in>img:first-child{display:block;width:100%;height:auto}
+.fv-row{position:absolute;left:0;right:0;height:16.53%;overflow:hidden}
+.fv-row.r1{top:60.69%}.fv-row.r2{top:78.62%}
+.fv-row-track{display:flex;height:100%;width:max-content;will-change:transform}
+.fv-row-track>div{flex:none;height:100%;aspect-ratio:313/341;margin-right:calc(100vw*.0193);display:flex;align-items:center;justify-content:center}
+.fv-row-track .bag{width:84%}
+.fv-row-track .bag-en{font-size:10px;letter-spacing:0}
+.fv-sp-cup{position:absolute;left:59.8%;top:69.6%;width:50.9%;height:auto;z-index:2;pointer-events:none}
+@media (max-width:768px){.fv-sp{display:block}}
+
+
+/* ===== ドリップバッグのイラスト（CSSで描画） ===== */
+.bag{position:relative;width:100%;aspect-ratio:3/4;background:var(--c);color:var(--k,#fff);border-radius:5px 5px 9px 9px;box-shadow:0 8px 16px -8px rgba(58,35,24,.5),inset 0 -10px 18px -10px rgba(0,0,0,.25);overflow:hidden}
+.bag::before{content:"";position:absolute;left:0;right:0;top:13%;border-top:2px dashed rgba(255,255,255,.55)}
+.bag::after{content:"";position:absolute;left:0;right:0;top:0;height:13%;background:rgba(255,255,255,.14)}
+.bag-in{position:absolute;inset:22% 10% 9%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1.5px solid currentColor;border-radius:4px;opacity:.95}
+.bag-brand{font-size:7px;letter-spacing:.2em;font-weight:700;opacity:.85}
+.bag-en{font-weight:800;font-size:11px;line-height:1.15;letter-spacing:.06em;margin:4px 2px}
+.bag-dot{width:16px;height:16px;border-radius:50%;background:currentColor;opacity:.9;margin-top:4px;-webkit-mask:radial-gradient(circle at 50% 50%,transparent 3px,#000 3.5px);mask:radial-gradient(circle at 50% 50%,transparent 3px,#000 3.5px)}
+.bag.light::before{border-color:rgba(0,0,0,.25)}
+.bag-img{background:none;box-shadow:none;overflow:visible;display:flex;align-items:center;justify-content:center}
+.bag-img::before,.bag-img::after{display:none}
+.bag-img img{width:100%;height:auto;max-height:100%;object-fit:contain;filter:drop-shadow(0 6px 8px rgba(58,35,24,.35))}
+
+/* ===== 価格・内容 ===== */
+.brief{position:relative;overflow:hidden;padding:70px 0 80px;background:var(--red) repeating-linear-gradient(-45deg,rgba(255,255,255,.06) 0 14px,transparent 14px 28px)}
+.brief::before,.brief::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(201,160,78,.45),transparent 70%);pointer-events:none}
+.brief::before{left:-80px;top:-90px}.brief::after{right:-70px;bottom:-110px}
+.brief-hd{position:relative;text-align:center;color:var(--white);margin:0}
+.brief-hd small{display:inline-block;font-family:var(--num);font-weight:700;font-size:13px;letter-spacing:.3em;color:var(--gold)}
+.brief-hd h2{font-size:clamp(26px,3.2vw,40px);font-weight:800;line-height:1.4;letter-spacing:.04em}
+.brief-hd h2 .sub{display:block;font-size:.62em;letter-spacing:.08em}
+.brief-hd h2 em{display:block;font-style:normal;color:#ffe08a;white-space:nowrap;font-size:1.45em;line-height:1.2;margin-top:4px}
+.sp-br{display:none}
+/* 開始前・終了後は見出しの文言が長いので少し小さく */
+/* カウントダウン */
+.cd{display:inline-flex;flex-direction:column;align-items:center;margin-top:20px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:14px 26px 16px}
+.cd-lbl{font-size:16px;font-weight:800;letter-spacing:.08em;color:var(--white)}
+.cd-time{display:flex;align-items:baseline;gap:4px;margin-top:4px;color:var(--white)}
+.cd-time b{font-family:var(--num);font-weight:700;font-size:44px;line-height:1.05;color:#ffe08a;min-width:1.25em;text-align:center}
+.cd-time b#cdD{min-width:auto}
+.cd-u{font-size:15px;font-weight:800;margin-right:4px}
+.cd.end{display:none}
+/* 価格・内容のカード */
+.rsv{position:relative;max-width:720px;margin:40px auto 0;background:var(--white);border-radius:24px;padding:44px 56px 46px;color:var(--ink);box-shadow:0 24px 40px -22px rgba(80,0,0,.55)}
+.rsv-top{text-align:center}
+.rsv-badge{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:var(--white);font-weight:800;font-size:16px;border-radius:999px;padding:4px 18px}
+.rsv-badge i{width:9px;height:9px;border-radius:50%;background:#ffe08a;animation:blink 1.4s infinite}
+.rsv-name{font-size:30px;font-weight:800;line-height:1.35;color:var(--brown);margin-top:14px}
+.rsv-name small{display:block;font-size:16px;font-weight:700;color:var(--brown-lt);margin-bottom:2px}
+.rsv-price{text-align:center;margin-top:22px;padding:22px 0 24px;border-top:1px solid var(--cream-dk);border-bottom:1px solid var(--cream-dk)}
+.rsv-price .lbl{display:block;font-size:17px;font-weight:800;color:var(--red)}
+.rsv-price b{font-family:var(--num);font-weight:700;font-size:84px;line-height:1.05;color:var(--red);letter-spacing:-.01em}
+.rsv-price .yen{font-size:24px;font-weight:800;color:var(--red);margin-left:4px}
+.rsv-price .yen small{font-size:16px;color:var(--ink);font-weight:700}
+.rsv-tags{display:flex;justify-content:center;gap:10px;margin-top:10px}
+.rsv-tags span{font-size:17px;font-weight:800;border:2px solid var(--red);color:var(--red);border-radius:6px;padding:2px 14px}
+.rsv-list{margin-top:8px}
+.rsv-list>div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 4px;border-bottom:1px solid var(--cream-dk)}
+.rsv-list dt{font-size:16px;font-weight:800;color:var(--brown-lt)}
+.rsv-list dd{font-size:19px;font-weight:700;line-height:1.6}
+.rsv-btn{position:relative;overflow:hidden;display:block;max-width:420px;margin:30px auto 0;background:var(--red);color:var(--white);font-weight:800;font-size:22px;text-align:center;border-radius:999px;padding:20px 10px;text-decoration:none;box-shadow:0 6px 0 var(--red-dk);animation:tkPulse 1.8s ease-in-out infinite}
+.rsv-btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-20deg);animation:shine 2.6s ease-in-out infinite}
+@keyframes shine{0%,55%{left:-60%}100%{left:130%}}
+@keyframes tkPulse{50%{transform:scale(1.05)}}
+
+/* ===== フルスクリーンの写真 ===== */
+.photo-band{background:#1a1a1a;line-height:0}
+.photo-band img{display:block;width:100%;height:auto}
+@media (max-width:768px){.photo-band img{height:260px;object-fit:cover;object-position:50% 50%}}
+
+/* ===== 中央寄せのメッセージ ===== */
+.msg{background:var(--cream);text-align:center;padding:100px 24px;position:relative;overflow:hidden}
+.msg .msg-big{text-align:center!important;font-family:var(--num);font-weight:700;color:var(--red);font-size:clamp(48px,7.5vw,100px);line-height:1.02;letter-spacing:.01em;margin-bottom:30px}
+.msg-big .ln{display:block;white-space:nowrap}
+.msg-big .ch{display:inline-block;opacity:0;transform:translateY(.5em) scale(.6) rotate(-12deg)}
+.msg-big.on .ch{animation:chIn .55s cubic-bezier(.2,1.6,.4,1) forwards;animation-delay:calc(var(--i)*.06s)}
+.msg-big .sp{display:inline-block;width:.28em}
+@keyframes chIn{to{opacity:1;transform:none}}
+.msg-show{max-width:760px;margin:0 auto 54px}
+.msg-show .fv-r{container-type:inline-size;height:540px;padding-top:0;background:var(--red);border-radius:28px;overflow:hidden;box-shadow:0 24px 40px -26px rgba(80,0,0,.6)}
+.msg-show .fv-box{margin-bottom:84px}
+.msg h2{font-size:clamp(28px,3.4vw,42px);font-weight:800;line-height:1.5;margin:14px 0 36px}
+.msg h2 em{font-style:normal;color:var(--red);white-space:nowrap}
+.msg p{font-size:clamp(15px,1.4vw,17px);line-height:2.2;font-weight:500}
+@keyframes float{50%{transform:translateY(-18px)}}
+
+
+/* ===== セクション見出し ===== */
+.sec{padding:96px 0}
+.sec-hd{text-align:center;margin-bottom:46px}
+.sec-hd .en{display:block;font-size:13px;letter-spacing:.4em;font-weight:700;color:var(--red)}
+.sec-hd h2{font-size:clamp(28px,3.4vw,44px);font-weight:800;line-height:1.45;margin-top:10px}
+.sec-hd p{margin-top:14px;font-weight:500}
+
+/* ===== 30袋ぜんぶ見せる ===== */
+.lineup{background:var(--cream)}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:16px}
+@media (max-width:768px){
+  /* スマホ：「すべて」を横幅いっぱい、残り4つを2列×2段にそろえる */
+  .filters{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .filters .ft{justify-content:center;padding:10px 6px;font-size:14px;white-space:nowrap}
+  .filters .ft:first-child{grid-column:1/-1}
+  .pc-only{display:none}
+}
+.ft{border:2px solid var(--brown);border-radius:999px;padding:8px 18px;font-weight:700;font-size:14px;transition:background .2s,color .2s,transform .2s;display:inline-flex;align-items:center;gap:8px}
+.ft i{width:10px;height:10px;border-radius:50%;background:var(--dot)}
+.ft:hover{transform:translateY(-2px)}
+.ft.on{background:var(--brown);color:var(--cream)}
+.lu-note{text-align:center;font-size:13px;color:var(--brown-lt);margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:26px 20px}
+.card{transition:opacity .4s,transform .4s}
+.card.hide{display:none}
+.card.pop{animation:pop .5s cubic-bezier(.2,1.4,.4,1) both;animation-delay:var(--dl,0s)}
+@keyframes pop{0%{opacity:0;transform:translateY(24px) scale(.85)}100%{opacity:1;transform:none}}
+.card-in{position:relative;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;padding:16px 16px 12px;background:var(--white);border-radius:14px;box-shadow:0 2px 0 var(--cream-dk);cursor:pointer;text-align:center;transition:transform .25s,box-shadow .25s}
+.card-in:hover{transform:translateY(-4px);box-shadow:0 12px 22px -12px rgba(58,35,24,.35)}
+.card-in .bag{width:76%;transition:transform .3s}
+.card-in:hover .bag{transform:translateY(-6px) rotate(-4deg)}
+.card-no{position:absolute;left:10px;top:8px;font-family:var(--num);font-weight:700;font-size:13px;color:var(--brown-lt)}
+.card-cat{margin-top:12px;font-size:11px;font-weight:700;color:var(--white);background:var(--cc);border-radius:999px;padding:1px 10px}
+.card-name{font-weight:800;font-size:15px;line-height:1.35;margin:6px 0 10px;text-align:center;word-break:keep-all;overflow-wrap:anywhere}
+.card-name small{display:block;font-size:11px;font-weight:700;color:var(--brown-lt)}
+.card-tap{margin-top:auto;width:100%;border-top:1px solid var(--cream-dk);padding-top:8px;font-size:11px;color:var(--brown-lt);display:flex;justify-content:space-between;align-items:center}
+.card-tap i{font-style:normal;font-family:var(--num);font-size:20px;line-height:1;color:var(--red)}
+
+/* ===== 銘柄のポップアップ ===== */
+.cdlg{width:min(760px,calc(100% - 32px));max-height:calc(100dvh - 32px);margin:auto;border:0;border-radius:20px;padding:0;background:var(--white);color:var(--ink);overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.cdlg::backdrop{background:rgba(42,26,18,.72);backdrop-filter:blur(4px)}
+.cdlg[open]{display:grid;grid-template-columns:270px minmax(0,1fr);animation:dlgIn .3s cubic-bezier(.2,1.3,.4,1)}
+@keyframes dlgIn{from{opacity:0;transform:translateY(24px) scale(.95)}to{opacity:1;transform:none}}
+.cdlg-x{position:absolute;right:14px;top:14px;z-index:2;width:42px;height:42px;border-radius:50%;background:var(--white);border:1.5px solid var(--brown);color:var(--brown);font-size:24px;line-height:1;display:grid;place-items:center}
+.cdlg-vis{position:relative;background:color-mix(in srgb,var(--cc) 30%,#fff);display:flex;align-items:center;justify-content:center;padding:56px 36px 40px;overflow:hidden}
+.cdlg-no{position:absolute;left:18px;top:6px;font-family:var(--num);font-weight:700;font-size:110px;line-height:1;color:var(--cc);opacity:.35}
+.cdlg-bag{position:relative;width:min(170px,100%)}
+.cdlg-bag.in{animation:bagIn .5s cubic-bezier(.2,1.5,.4,1)}
+@keyframes dlgFade{from{opacity:0}to{opacity:1}}
+@keyframes bagIn{from{opacity:0;transform:translateY(30px) rotate(-10deg) scale(.8)}to{opacity:1;transform:none}}
+.cdlg-body{padding:40px 34px 26px;display:flex;flex-direction:column}
+.cdlg-lbl{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700;color:var(--brown-lt)}
+.cdlg-lbl b{font-family:var(--num);font-size:14px;color:var(--red);letter-spacing:.06em}
+.cdlg-lbl span{color:var(--white);background:var(--cc);border-radius:999px;padding:1px 10px;font-size:11px}
+.cdlg-body h3{font-size:26px;font-weight:800;line-height:1.4;margin:10px 0 12px}
+.cdlg-hook{font-size:17px;font-weight:700;line-height:1.6;color:var(--brown)}
+.cdlg-desc{font-size:15px;line-height:1.9;margin-top:12px;padding-top:12px;border-top:1px solid var(--cream-dk)}
+.cdlg-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.cdlg-tags span{font-size:12px;font-weight:700;background:var(--cream);border-radius:4px;padding:2px 10px}
+.cdlg-link{font-size:13px;font-weight:700;color:var(--red);margin-top:16px;text-underline-offset:4px}
+.cdlg-nav{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:22px;padding-top:16px;border-top:1px solid var(--cream-dk)}
+.cdlg-nav button{border:1.5px solid var(--brown);border-radius:999px;padding:9px 16px;font-size:13px;font-weight:700;transition:background .2s,color .2s}
+.cdlg-nav button:hover{background:var(--brown);color:var(--cream)}
+.cdlg-nav span{font-family:var(--num);font-weight:700;font-size:14px;color:var(--brown-lt)}
+.rl-more{margin-top:10px;display:inline-block;font-size:13px;font-weight:700;color:var(--red);text-decoration:underline;text-underline-offset:4px}
+
+/* ===== 今日の一杯ガチャ ===== */
+.gacha{background:#204ac4;color:#fff8eb;overflow:hidden}
+.gacha .sec-hd h2{color:var(--white)}
+.gacha .sec-hd .en{color:var(--gold)}
+.play{display:grid;grid-template-columns:1fr minmax(0,470px);gap:60px;align-items:center}
+.play-en{font-family:var(--num);font-weight:700;font-size:14px;letter-spacing:.25em;color:#f4bd39}
+.play h2{font-size:clamp(32px,4vw,52px);font-weight:800;line-height:1.45;color:var(--white);margin:16px 0 26px}
+.play p{font-size:16px;font-weight:700;line-height:1.9}
+.play .note{font-size:13px;font-weight:500;opacity:.75;margin-top:18px}
+.rl{position:relative;background:var(--cream);color:var(--ink);border-radius:16px;padding:38px 34px 32px;text-align:center;box-shadow:14px 14px 0 #122963}
+.rl-en{font-family:var(--num);font-weight:700;font-size:14px;letter-spacing:.25em;color:var(--brown)}
+.rl-body{min-height:260px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:10px 0 18px}
+.rl-q{font-family:var(--num);font-weight:700;font-size:110px;line-height:1;color:var(--red);animation:qBob 1.6s ease-in-out infinite}
+@keyframes qBob{50%{transform:translateY(-8px) rotate(6deg)}}
+.rl .rl-ttl{font-size:26px;font-weight:800;margin-top:16px;line-height:1.5}
+.rl .rl-sub{font-size:14px;font-weight:700;margin-top:12px}
+.rl-spin{display:flex;align-items:center;gap:22px;text-align:left}
+.rl-spin .bag{width:96px}
+.rl-spin .bag-en{font-size:9px;letter-spacing:0}
+.rl-spin .bag-brand{display:none}
+.rl h3,.rl-spin span{word-break:keep-all;overflow-wrap:anywhere}
+.rl h3 small,.rl-spin span small{display:block;font-size:12px;color:var(--brown-lt)}
+.rl-spin b{display:block;font-family:var(--num);font-weight:700;font-size:56px;line-height:1;color:var(--red)}
+.rl-spin span{display:block;font-weight:800;font-size:18px;margin-top:6px}
+.rl-res{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:center;text-align:left;animation:rlPop .55s cubic-bezier(.2,1.5,.4,1)}
+@keyframes rlPop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+.rl-res .rl-no{display:block;font-family:var(--num);font-weight:700;font-size:44px;line-height:1;color:var(--red);margin-top:6px;letter-spacing:.02em}
+.rl-res .lbl{font-size:13px;font-weight:700;color:var(--red);letter-spacing:.1em}
+.rl-res h3{font-size:26px;font-weight:800;line-height:1.35;margin-top:2px}
+.rl .rl-res p{font-size:14px;line-height:1.8;margin-top:8px}
+.rl-btn{display:block;width:100%;background:var(--red);color:var(--white);font-weight:800;font-size:18px;padding:18px 20px;border-radius:999px;box-shadow:0 6px 0 var(--red-dk);transition:transform .15s,box-shadow .15s}
+.rl-btn:active{transform:translateY(5px);box-shadow:0 1px 0 var(--red-dk)}
+.rl-btn:disabled{opacity:.75;cursor:wait}
+.rl .conf{z-index:5}
+
+/* ===== 楽しみ方 ===== */
+.how{background:var(--cream-dk)}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.how-item{background:var(--white);border-radius:20px;padding:34px 26px 30px;text-align:center;position:relative}
+.how-item .stp{position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:var(--red);color:var(--white);font-family:var(--num);font-weight:700;font-size:13px;border-radius:999px;padding:4px 16px;letter-spacing:.1em}
+.how-ic{width:84px;height:84px;margin:6px auto 16px;border-radius:50%;background:var(--cream);display:grid;place-items:center;font-size:40px}
+.how-item h3{font-size:19px;font-weight:800;line-height:1.5}
+.how-item p{font-size:14px;margin-top:10px;text-align:left}
+
+/* ===== 4つの味わいグループ（分割パネル） ===== */
+.types{display:grid;grid-template-columns:1fr 1fr}
+.type{padding:60px max(5vw,calc(25vw - 260px));color:var(--white);position:relative;overflow:hidden}
+.type:nth-child(1){background:var(--cat-a)}
+.type:nth-child(2){background:var(--cat-b)}
+.type:nth-child(3){background:var(--cat-c)}
+.type:nth-child(4){background:var(--cat-d)}
+.type .n{font-size:13px;font-weight:700;letter-spacing:.3em;opacity:.85}
+.type h3{font-size:clamp(23px,2.4vw,30px);font-weight:800;line-height:1.4;margin-top:6px}
+.type p{margin-top:10px;font-size:15px;font-weight:500}
+.type ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+.type li button{font-size:12.5px;font-weight:700;color:var(--white);background:rgba(255,255,255,.2);border-radius:999px;padding:4px 12px;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.type li button::after{content:" ＋";opacity:.7}
+.type li button:hover{background:var(--white);color:var(--brown);transform:translateY(-2px)}
+.type .big{position:absolute;right:32px;top:32px;font-family:var(--num);font-size:200px;font-weight:700;line-height:.8;opacity:.12;pointer-events:none}
+
+/* ===== 商品概要 ===== */
+.spec{background:var(--cream)}
+.spec-box{max-width:820px;margin:0 auto;background:var(--white);border-radius:24px;padding:46px 46px 40px;box-shadow:0 18px 40px -26px rgba(58,35,24,.4);border-top:10px solid var(--red)}
+.spec-box table{width:100%;border-collapse:collapse}
+.spec-box th,.spec-box td{padding:20px 12px;border-bottom:1px solid var(--cream-dk);text-align:left;vertical-align:middle;font-size:19px;line-height:1.6}
+.spec-box th{width:28%;color:var(--brown-lt);font-weight:800;font-size:17px;white-space:nowrap}
+.spec-box td{font-weight:700}
+.spec-box td b{font-family:var(--num);font-size:44px;line-height:1;font-weight:700;color:var(--red)}
+.tbd{background:#fff3b0;padding:0 4px}
+.spec-cta{text-align:center;margin-top:34px}
+.spec-cta .btn{font-size:18px;padding:18px 56px;white-space:nowrap}
+@media (max-width:768px){.spec-cta .btn{display:flex;width:100%;font-size:17px;padding:18px 16px}}
+.spec-cta p{font-size:14px;color:var(--brown-lt);margin-top:14px}
+
+/* ===== フッター ===== */
+.ft-end{background:#d0121c;color:var(--white);text-align:center;padding:56px 24px 60px;font-size:13px;display:flex;flex-direction:column;align-items:center;gap:26px}  /* 背景はロゴの赤 */
+.ft-logo{display:block;line-height:0;transition:opacity .2s}
+.ft-logo:hover{opacity:.85}
+.ft-logo img{display:block;height:44px;width:auto}
+.ft-top{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--white);color:var(--white);font-weight:800;font-size:15px;border-radius:999px;padding:12px 30px;text-decoration:none;transition:background .2s,color .2s}
+.ft-top::before{content:"↑";font-family:var(--num)}
+.ft-top:hover{background:var(--white);color:#d0121c}
+.ft-end small{font-family:var(--num);font-size:12px;letter-spacing:.1em;opacity:.8}
+@media (max-width:768px){.ft-end{padding:44px 20px calc(96px + env(safe-area-inset-bottom));gap:18px}.ft-logo img{height:32px}.ft-top{display:none}}
+
+/* スマホ下部の固定ボタン */
+.fix{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;transform:translateY(130%);transition:transform .4s}
+.fix.on{transform:none}
+.fix a{display:flex;justify-content:center;align-items:center;background:var(--red);color:var(--white);font-weight:800;border-radius:999px;padding:15px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+
+/* ===== タブレット・スマホ ===== */
+@media (max-width:960px){
+  .grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:768px){
+  .sp-br{display:inline}
+  .cd{padding:12px 14px 14px;margin-top:16px}
+  .cd-lbl{font-size:14px}
+  .cd-time b{font-size:32px}
+  .cd-u{font-size:12px;margin-right:2px}
+  .hd{height:64px;padding:0 16px;flex-direction:column;justify-content:center;gap:4px}
+  .hd-logo img{height:28px}
+  .hd-sp-sub{display:block!important;color:var(--white);font-size:13px;font-weight:700;letter-spacing:.06em;line-height:1.2}
+  .hd-burger{position:absolute;right:12px;top:50%;transform:translateY(-50%)}
+  .hd-cta{display:none}
+  .wrap{padding:0 16px}
+  .fv{grid-template-columns:1fr;min-height:0;padding:0}
+  .fv-l{padding:72px 20px 26px;align-items:center;text-align:center}
+  .fv-tag{align-self:center}
+  .fv-num{justify-content:center}
+  .fv-num small{text-align:left}
+  .fv-btns{justify-content:center}
+
+  .fv-num{font-size:118px;margin-top:10px}
+  .fv-h1{font-size:25px}
+  .fv-sub{font-size:13.5px}
+  .fv-btns{margin-top:22px}
+  .fv-r{height:330px;padding-top:0;align-self:auto}
+  .msg-show{margin:0 -4px 40px}
+  .msg-show .fv-r{height:400px;border-radius:20px}
+  .msg-show .fv-box{margin-bottom:76px}
+  .fv-count{font-size:22px;bottom:18px}
+  .fv-count.done{font-size:clamp(36px,12.6cqw,60px)}
+  .fv-box{width:62%;margin:0 0 30px}
+  .drop{width:46px}
+  .btn{padding:13px 22px;font-size:14px}
+  .msg{padding:56px 20px 84px}
+  .msg p{text-align:left;line-height:2}
+  .msg p br{display:none}
+  .sec{padding:76px 0}
+  .grid{grid-template-columns:repeat(2,1fr);gap:16px 12px}
+  .card-in{padding:14px 10px 10px}
+  .card-name{font-size:14px}
+  .cdlg{width:calc(100% - 24px);max-height:calc(100svh - 24px);margin:0 auto;inset:auto 0;top:50svh;transform:translateY(-50%);border-radius:16px;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  .cdlg::backdrop{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(42,26,18,.6)}
+  .cdlg[open]{grid-template-columns:minmax(0,1fr);animation:dlgFade .22s ease-out}  /* 真ん中にその場でふわっと出す（位置は動かさない） */
+  .cdlg-vis{padding:30px 0 22px;height:200px}
+  .cdlg-bag{width:120px}
+  .cdlg-no{font-size:90px}
+  .cdlg-x{width:38px;height:38px;right:10px;top:10px}
+  .cdlg-body{padding:20px 20px calc(18px + env(safe-area-inset-bottom))}
+  .cdlg-body h3{font-size:21px;margin:8px 0}
+  .cdlg-hook{font-size:15px}
+  .cdlg-desc{font-size:14px;line-height:1.8}
+  .cdlg-nav button{padding:8px 12px;font-size:12px}
+  .play{grid-template-columns:1fr;gap:36px}
+  .play h2{font-size:38px;margin:12px 0 18px}
+  .play>div:first-child{text-align:center}
+  .pc-br{display:none}
+  .msg h2{font-size:32px;line-height:1.45}
+  .sec-hd h2{font-size:32px}
+  .brief-hd h2{font-size:28px}
+  .type h3{font-size:26px}
+  .how .sec-hd h2{font-size:34px}
+  .spec .sec-hd h2{font-size:26px}
+  .play p{font-size:14px}
+  .rl{padding:28px 18px 22px;box-shadow:8px 8px 0 #122963}
+  .rl-body{min-height:230px}
+  .rl-q{font-size:100px}
+  .rl .rl-ttl{font-size:21px}
+  .rl-spin .bag{width:76px}
+  .rl-spin b{font-size:44px}
+  .rl-res{grid-template-columns:1fr;gap:14px;text-align:center;justify-items:center}
+  .rl-res .bag{width:120px}
+  .rl-res .rl-no{font-size:38px}
+  .rl-res h3{font-size:20px}
+  .rl .rl-res p{font-size:13px}
+  .rl-btn{font-size:16px;padding:16px}
+  .how-grid{grid-template-columns:1fr;gap:36px}
+  .types{grid-template-columns:1fr}
+  .type{padding:54px 22px}
+  .type .big{font-size:140px;right:18px;top:24px}
+  .spec-box{padding:30px 20px 28px}
+  .spec-box th,.spec-box td{display:block;width:auto;border:0;padding:0}
+  .spec-box th{padding-top:16px;font-size:14px}
+  .spec-box td{font-size:17px}
+  .spec-box td b{font-size:36px}
+  .spec-box td{padding:2px 0 14px;border-bottom:1px solid var(--cream-dk)}
+  .brief{padding:50px 0 46px}
+  .brief-hd{margin-top:0}
+  .rsv{margin-top:28px;padding:30px 20px 30px;border-radius:18px}
+  .rsv-name{font-size:23px}
+  .rsv-name small{font-size:14px}
+  .rsv-price b{font-size:60px}
+  .rsv-price .yen{font-size:20px}
+  .rsv-tags span{font-size:15px}
+  .rsv-list>div{grid-template-columns:1fr;gap:2px;padding:12px 2px}
+  .rsv-list dt{font-size:15px}
+  .rsv-list dd{font-size:20px;line-height:1.55}
+  .rsv-btn{font-size:19px;padding:17px 10px}
+  .fix{display:block;left:0;right:0;bottom:0}
+  .fix a{border-radius:0;background:#1a1a1a;padding:18px 16px calc(18px + env(safe-area-inset-bottom));font-size:17px;letter-spacing:.06em;box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+}
+@media (prefers-reduced-motion:reduce){
+  .rsv-btn,.rsv-btn::after,.rsv-badge i{animation:none!important}
+  .msg-big .ch{opacity:1;transform:none}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd">
+  <a class="hd-logo" href="https://www.rakuten.co.jp/sawaicoffee-tea/" target="_blank" rel="noopener"><img src="img/logo.png" width="960" height="160" alt="SAWAI COFFEE 澤井珈琲"></a>
+  <p class="hd-sp-sub">30種類を飲み比べ『オールスターズ30』</p>
+  <p class="hd-ttl">ドリップバッグ30種類を飲み比べ『オールスターズ30』</p>
+  <nav class="hd-nav" id="hdNav" aria-label="メニュー">
+    <ul>
+      <li><a href="#story">30種の飲み比べ</a></li>
+      <li><a href="#reserve">価格・内容</a></li>
+      <li><a href="#lineup">30種ラインナップ</a></li>
+      <li><a href="#pick">本日のおすすめ</a></li>
+      <li><a href="#types">味わいタイプ</a></li>
+      <li><a href="#how">楽しみ方</a></li>
+      <li><a href="#spec">商品概要</a></li>
+    </ul>
+    <a class="hd-nav-cta" href="#spec">ご購入はこちら</a>
+  </nav>
+  <!-- ▼ 購入URL：オールスターズ30の商品ページURLに差し替え -->
+  <a class="hd-cta" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">ご購入はこちら</a>
+  <button type="button" class="hd-burger" id="hdBurger" aria-label="メニューを開く" aria-expanded="false" aria-controls="hdNav"><span></span><span></span><span></span></button>
+</header>
+
+<!-- ===== FV ===== -->
+<!-- ▼ PCのFV（画像・仮）。スマホは下の動くFVを表示 -->
+<h1 class="vh" id="top">澤井珈琲ドリップコーヒー オールスターズ30｜ドリップバッグ30袋入り 2,700円（税込）</h1>
+<section class="fv-img">
+  <div class="fv-img-in">
+    <img src="img/fv-pc_regular.jpg" width="2500" height="1200" alt="30種類を飲み比べ　澤井珈琲ドリップコーヒー オールスターズ30　ドリップバッグ30袋入り　2,700円（税込）　30種類×各1袋">
+    <!-- 左の2列：ドリップバッグが縦に流れる（中身はJSで30種を入れる） -->
+    <div class="fv-col c1" aria-hidden="true"><div class="fv-track" id="fvTrack1"></div></div>
+    <div class="fv-col c2" aria-hidden="true"><div class="fv-track" id="fvTrack2"></div></div>
+  </div>
+</section>
+
+<!-- ▼ PCのメニュー（FVの下） -->
+<nav class="pc-nav" aria-label="ページ内メニュー">
+  <ul>
+    <li><a href="#story">30種の飲み比べ</a></li>
+    <li><a href="#reserve">価格・内容</a></li>
+    <li><a href="#lineup">30種ラインナップ</a></li>
+    <li><a href="#pick">本日のおすすめ</a></li>
+    <li><a href="#types">味わいタイプ</a></li>
+    <li><a href="#how">楽しみ方</a></li>
+    <li><a href="#spec">商品概要</a></li>
+  </ul>
+</nav>
+
+<!-- ▼ スマホのFV（画像＋横に流れる2列＋コーヒーカップ）。PCは上の画像FV -->
+<section class="fv-sp">
+  <div class="fv-sp-in">
+    <img src="img/fv-sp_regular.jpg" width="1500" height="2063" alt="30種類を飲み比べ　澤井珈琲ドリップコーヒー オールスターズ30　ドリップバッグ30袋入り　2,700円（税込）　30種類×各1袋">
+    <!-- 画像1500×2063のうち y=1252〜1593 と y=1622〜1963 の位置に、袋が横に流れる2列 -->
+    <div class="fv-row r1" aria-hidden="true"><div class="fv-row-track" id="spTrack1"></div></div>
+    <div class="fv-row r2" aria-hidden="true"><div class="fv-row-track" id="spTrack2"></div></div>
+    <img class="fv-sp-cup" src="img/fv-sp-cup.webp" width="800" height="783" alt="" aria-hidden="true">
+  </div>
+</section>
+<div class="sp-cta"><a href="#spec">ご購入はこちら</a></div>
+
+
+
+<!-- ===== メッセージ ===== -->
+<section class="msg" id="story">
+  <p class="msg-big" id="msgBig" aria-label="30 DAYS, 30 COFFEES!"><span class="ln">30 DAYS,</span><span class="ln">30 COFFEES!</span></p>
+  <h2 class="rv d1">同じ一杯は、<br class="sp-br"><em>ひとつもない。</em></h2>
+  <!-- 福袋の演出（スクロールで見えたら開始。箱をタップでもう一度） -->
+  <div class="msg-show rv d2">
+  <div class="fv-r">
+    <div class="fv-stage" id="stage" aria-hidden="true"></div>
+    <div class="burst-layer" id="burstLayer" aria-hidden="true"></div>
+    <div class="fv-box">
+      <div class="bouquet" id="bouquet" aria-hidden="true"></div>
+      <div class="box" id="box" title="タップでもう一度">
+        <span class="box-ribbon"></span>
+        <span class="box-bow" aria-hidden="true"><svg viewBox="0 0 140 84"><path d="M62 40 L44 80 L56 74 L64 84 L70 44Z M78 40 L96 80 L84 74 L76 84 L70 44Z" fill="#fffaf0" stroke="#c4161c" stroke-width="3" stroke-linejoin="round"/><path d="M70 38 C52 6 14 2 9 22 C4 42 40 50 70 38Z M70 38 C88 6 126 2 131 22 C136 42 100 50 70 38Z" fill="#fffaf0" stroke="#c4161c" stroke-width="4" stroke-linejoin="round"/><path d="M66 36 C54 20 30 16 26 26 M74 36 C86 20 110 16 114 26" fill="none" stroke="#fffaf0" stroke-width="4" stroke-linecap="round"/><rect x="58" y="26" width="24" height="24" rx="8" fill="#fffaf0" stroke="#c4161c" stroke-width="4"/></svg></span>
+      </div>
+    </div>
+    <div class="fv-count" id="fvCount" aria-live="polite"><span id="boxCount">0</span> / 30 袋</div>
+  </div>
+  </div>
+  <p class="rv d2">
+    やさしい甘みのマイルドブレンド、<br>
+    花のように香るやくもブレンド、<br>
+    じっくり深煎りのルナブレンド。<br><br>
+    澤井珈琲がこれまで焙煎してきた銘柄から、<br>
+    個性の違う30種類をひと袋ずつ詰め合わせました。<br>
+    1日1袋で、ちょうどひと月。<br>
+    きっと「わたしの一杯」が見つかります。
+  </p>
+</section>
+
+<!-- ===== 価格・内容 ===== -->
+<section class="brief" id="reserve" aria-label="オールスターズ30の価格・内容">
+  <div class="wrap">
+    <div class="brief-hd rv">
+      <small>PRICE</small>
+      <h2><span class="sub">ドリップバッグ30袋入り</span><em>好評発売中！</em></h2>
+    </div>
+    <div class="rsv rv d1">
+      <div class="rsv-top">
+        <span class="rsv-badge"><i></i><span>好評発売中</span></span>
+        <p class="rsv-name"><small>澤井珈琲ドリップコーヒー</small>オールスターズ30</p>
+      </div>
+      <div class="rsv-price">
+        <span class="lbl">販売価格</span>
+        <b>2,700</b><span class="yen">円<small>（税込）</small></span>
+      </div>
+      <!-- 内容・発売日（下の商品概要も同じ内容） -->
+      <dl class="rsv-list">
+        <div><dt>内容</dt><dd>ドリップバッグ 30袋入り<br class="sp-br">（30種×各1袋）</dd></div>
+        <div><dt>発売日</dt><dd>11月15日（日）</dd></div>
+      </dl>
+      <a class="rsv-btn" href="#spec">今すぐ購入する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== フルスクリーンの写真（photo.jpg） ===== -->
+<div class="photo-band"><img src="img/photo.jpg" width="2500" height="800" alt="リッチブレンドとハローブレンドのドリップバッグと、赤いカップに注いだコーヒー" loading="lazy"></div>
+
+<!-- ===== 30種ラインナップ ===== -->
+<section class="sec lineup" id="lineup">
+  <div class="wrap">
+    <div class="sec-hd">
+      <span class="en rv">LINE UP</span>
+      <h2 class="rv d1">入っている30種、<br>ぜんぶ見せます。</h2>
+      <p class="rv d2">気になる銘柄をタップすると、<br class="sp-br">味わいの特長が見られます。</p>
+    </div>
+    <div class="filters" id="filters">
+      <button class="ft on" data-cat="all">すべて（30）</button>
+      <button class="ft" data-cat="a" style="--dot:var(--cat-a)"><i></i>まろやか・やさしい</button>
+      <button class="ft" data-cat="b" style="--dot:var(--cat-b)"><i></i>香り華やか<span class="pc-only">・フルーティー</span></button>
+      <button class="ft" data-cat="c" style="--dot:var(--cat-c)"><i></i>バランス・コク</button>
+      <button class="ft" data-cat="d" style="--dot:var(--cat-d)"><i></i>しっかりビター</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+
+<!-- ===== 本日の澤井珈琲おすすめ ===== -->
+<section class="sec gacha" id="pick">
+  <div class="wrap play">
+    <div>
+      <span class="play-en rv">TODAY'S PICK</span>
+      <h2 class="rv d1">本日の<br class="pc-br">澤井珈琲<br>おすすめ商品</h2>
+      <p class="rv d2">30袋のうち、今日はどれから飲もう？<br>迷ったら、澤井珈琲の「本日のおすすめ」をどうぞ。</p>
+      <p class="note rv d2">30種類すべてが1セットに入っています。</p>
+    </div>
+    <div class="rl rv d1" id="rl">
+      <div class="rl-en" id="rlDate">TODAY'S COFFEE</div>
+      <div class="rl-body" id="rlBody" aria-live="polite">
+        <div class="rl-q" aria-hidden="true">?</div>
+        <p class="rl-ttl">今日のおすすめは、どの一杯？</p>
+        <p class="rl-sub">全30種類の中から、毎日ひとつ。</p>
+      </div>
+      <button type="button" class="rl-btn" id="rlBtn">本日のおすすめを見る</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4タイプ ===== -->
+<section class="types" id="types">
+  <div class="type rv">
+    <span class="big">A</span>
+    <span class="n">TYPE A</span>
+    <h3>まろやか・やさしい</h3>
+    <p>苦味ひかえめで、口あたりやわらか。<br>コーヒーをはじめたばかりの方にも。</p>
+    <ul id="tyA"></ul>
+  </div>
+  <div class="type rv d1">
+    <span class="big">B</span>
+    <span class="n">TYPE B</span>
+    <h3>香り華やか・フルーティー</h3>
+    <p>花や果実を思わせる、ふわっと広がる香り。<br>袋を開けた瞬間から楽しい銘柄たち。</p>
+    <ul id="tyB"></ul>
+  </div>
+  <div class="type rv">
+    <span class="big">C</span>
+    <span class="n">TYPE C</span>
+    <h3>バランス・コク</h3>
+    <p>苦味とコク、香りのバランスがよい実力派。<br>毎日の定番にしたくなる味わい。</p>
+    <ul id="tyC"></ul>
+  </div>
+  <div class="type rv d1">
+    <span class="big">D</span>
+    <span class="n">TYPE D</span>
+    <h3>しっかりビター</h3>
+    <p>じっくり深煎りした、力強い苦味と濃いコク。<br>カフェオレにしてもおいしい。</p>
+    <ul id="tyD"></ul>
+  </div>
+</section>
+
+<!-- ===== 楽しみ方 ===== -->
+<section class="sec how" id="how">
+  <div class="wrap">
+    <div class="sec-hd">
+      <span class="en rv">HOW TO ENJOY</span>
+      <h2 class="rv d1">30袋の楽しみ方</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-item rv">
+        <span class="stp">IDEA 01</span>
+        <div class="how-ic" aria-hidden="true">📅</div>
+        <h3>1日1袋で、<br>ひと月の飲み比べ</h3>
+        <p>毎朝ちがう銘柄を1袋ずつ。30日かけて、ゆっくり澤井珈琲の味をめぐる旅に。</p>
+      </div>
+      <div class="how-item rv d1">
+        <span class="stp">IDEA 02</span>
+        <div class="how-ic" aria-hidden="true">☕</div>
+        <h3>家族や友だちと<br>きき珈琲</h3>
+        <p>2〜3種類を同時に淹れて、どれが好き？と飲み比べ。好みの違いがわかって盛り上がります。</p>
+      </div>
+      <div class="how-item rv d2">
+        <span class="stp">IDEA 03</span>
+        <div class="how-ic" aria-hidden="true">💛</div>
+        <h3>お気に入りが<br>見つかったら</h3>
+        <p>「これだ！」と思った銘柄は、単品のドリップバッグでたっぷり楽しめます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 商品概要 ===== -->
+<section class="sec spec" id="spec">
+  <div class="wrap">
+    <div class="sec-hd">
+      <span class="en rv">ITEM</span>
+      <h2 class="rv d1">澤井珈琲ドリップコーヒー<br>オールスターズ30</h2>
+    </div>
+    <div class="spec-box rv">
+      <table>
+        <tr><th>商品名</th><td>澤井珈琲ドリップコーヒー オールスターズ30</td></tr>
+        <!-- 価格 -->
+        <tr><th>販売価格</th><td><b>2,700</b>円（税込）</td></tr>
+        <tr><th>内容量</th><td>ドリップバッグ 30袋（30種類×各1袋）</td></tr>
+        <!-- 発売日 -->
+        <tr><th>発売日</th><td>11月15日（日）</td></tr>
+      </table>
+      <div class="spec-cta">
+        <!-- ▼ 購入URL：オールスターズ30の商品ページURLに差し替え -->
+        <a class="btn btn-r" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/" id="buy">オールスターズ30を購入する</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ft-end">
+  <a class="ft-logo" href="https://www.rakuten.co.jp/sawaicoffee-tea/" target="_blank" rel="noopener"><img src="img/logo.png" width="960" height="160" alt="澤井珈琲 トップページへ" loading="lazy"></a>
+  <a class="ft-top" href="#top">特集トップページに戻る</a>
+  <small>&copy; SAWAI COFFEE</small>
+</footer>
+
+<div class="fix" id="fix"><a href="#spec">ご購入はこちら</a></div>
+
+<!-- ===== 銘柄のポップアップ ===== -->
+<dialog class="cdlg" id="cdlg" aria-labelledby="cdlgName">
+  <button type="button" class="cdlg-x" id="cdlgX" aria-label="閉じる">×</button>
+  <div class="cdlg-vis"><span class="cdlg-no" id="cdlgNo" aria-hidden="true"></span><div class="cdlg-bag" id="cdlgBag"></div></div>
+  <div class="cdlg-body">
+    <p class="cdlg-lbl" id="cdlgLbl"></p>
+    <h3 id="cdlgName"></h3>
+    <p class="cdlg-hook" id="cdlgHook"></p>
+    <p class="cdlg-desc" id="cdlgDesc"></p>
+    <div class="cdlg-tags" id="cdlgTags"></div>
+    <a class="cdlg-link" id="cdlgLink" href="#" target="_blank" rel="noopener">この銘柄の単品・セットのページを見る →</a>
+    <div class="cdlg-nav">
+      <button type="button" id="cdlgPrev">← 前の銘柄</button>
+      <span id="cdlgPos"></span>
+      <button type="button" id="cdlgNext">次の銘柄 →</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* ===== 30種のデータ =====
+   cat：a=まろやか・やさしい / b=香り華やか・フルーティー / c=バランス・コク / d=しっかりビター
+   img：澤井珈琲30Pの切り抜きデータ（PSD）から書き出したパッケージ写真（img/フォルダ。30種すべて）。写真がない銘柄は c の色でイラストを表示
+   c：袋イラストの色（イメージ） k：袋の文字色
+   味わいの文章は各商品ページの説明をもとに要約しています */
+const coffees=[
+  {name:'マイルドブレンド',img:'pk-mild.webp',en:'MILD',cat:'a',c:'#c8202f',tags:['ハイロースト'],url:'dp-mdb50',desc:'香ばしい香りと、ふんわり広がるやさしい甘み。家族みんなで楽しめる、まろやかな定番の味わい。'},
+  {name:'ライトブレンド',img:'pk-light.webp',en:'LIGHT',cat:'a',c:'#f0c869',k:'#5a3a1f',tags:['ミディアムロースト'],url:'dp-ltb50',desc:'苦味が少なく、酸味もひかえめ。すっきりとしたコクとキレで、軽やかに飲める一杯。'},
+  {name:'アニバーサリーブレンド',img:'pk-anniversary.webp',en:'ANNI-<br>VERSARY',cat:'a',c:'#7b4f9e',tags:['ブラジル','コロンビア'],url:'dp-anb70',desc:'ブルーマウンテンを思わせる上品な風味に、芳ばしい香りがアクセント。おもてなしにも。'},
+  {name:'ブレンドフォルテシモ',img:'pk-fortissimo.webp',en:'FORTI-<br>SSIMO',cat:'a',c:'#e27396',tags:['サントスベース'],url:'dp-fv100',desc:'サントスをベースにした、優しい口当たり。焼き立ての香ばしい香りがあふれます。'},
+  {name:'メローブレンド',img:'pk-mellow.webp',en:'MELLOW',cat:'a',c:'#d98c5f',tags:['ホンジュラス','ウガンダ'],url:'osechi-sw100set',desc:'甘い香りとまろやかな味わいが魅力。ほっとひと息つきたいときにぴったり。'},
+  {name:'ブレンドハーモニー',img:'pk-harmony.webp',en:'HARMONY',cat:'a',c:'#7fae5a',tags:['中深煎り'],url:'dp-bhm50',desc:'しっかりしたコクとほどよい苦味、なのに口あたりはやさしい。酸味ひかえめで飲みやすい。'},
+  {name:'氷温甘熟ブレンド',img:'pk-hyoon.webp',en:'HYO-ON<br>KANJUKU',cat:'a',c:'#262222',tags:['氷温熟成'],url:'dp-hyouon2set',desc:'生豆を氷温域でじっくり熟成。引き出した甘みと旨みで、雑味が少なくまろやか。'},
+  {name:'ハローブレンド',img:'pk-hello.webp',en:'HELLO',cat:'a',c:'#f4f1ea',k:'#2a1a12',tags:['あっさり'],url:'dp-richhello50',desc:'あっさりした風味と爽やかな後味。軽やかでまろやか、コーヒー初心者にもおすすめ。'},
+
+  {name:'やくもブレンド',img:'pk-yakumo.webp',en:'YAKUMO',cat:'b',c:'#8a5a3c',tags:['グアテマラ','人気No.1'],url:'dp-yakumofuku100',desc:'花のような香りと気品ある味わい。松江店限定から生まれた、澤井珈琲の人気No.1ブレンド。'},
+  {name:'モカブレンド',img:'pk-mocha.webp',en:'MOCHA',cat:'b',c:'#d9668a',tags:['ハイロースト','エチオピア'],url:'dp-macha100',desc:'モカ特有の甘さを活かした、優しく華やかな香り。実店舗で女性に一番人気のブレンド。'},
+  {name:'キリマンジャロブレンド',img:'pk-kilimanjaro.webp',en:'KILIMA-<br>NJARO',cat:'b',c:'#e07b24',tags:['中強煎り','タンザニア'],url:'dp-kilimanb50p',desc:'柑橘を思わせる瑞々しい果実感と、力強く上品な酸味。朝の目覚めにぴったり。'},
+  {name:'プレミアムゴールド',img:'pk-premiumgold.webp',en:'PREMIUM<br>GOLD',cat:'b',c:'#b8862b',tags:['フルーティー'],url:'dp-premiumgold60',desc:'透明感のある口当たりに、完熟フルーツのような香りと甘み。上質なひとときに。'},
+  {name:'ソルブレンド',img:'pk-sol.webp',en:'SOL',cat:'b',c:'#b3262c',tags:['金のドリップ','メキシコ'],url:'dp-sol60',desc:'「金のドリップ」。メキシコ産豆のフルーティーな香りと、奥深いコクが楽しめます。'},
+  {name:'テルスブレンド',img:'pk-tellus.webp',en:'TELLUS',cat:'b',c:'#8c5a2b',tags:['銅のドリップ'],url:'dp-tellus',desc:'「銅のドリップ」。フルーティーな香味とバランスの取れた飲みやすさ、すっきりした余韻。'},
+  {name:'星降るブレンド カシオペア',img:'pk-cassiopeia.webp',en:'CASSIO-<br>PEIA',cat:'b',c:'#3f7fc1',tags:['インドネシア'],url:'dp-seizablend3s60',desc:'フルーティーな香りとマイルドな口当たり。苦味と酸味のバランスがとれた飲みやすさ。'},
+  {name:'星降るブレンド サザンクロス',img:'pk-southerncross.webp',en:'SOUTHERN<br>CROSS',cat:'b',c:'#24508f',tags:['コクをプラス'],url:'dp-seizablend3s60',desc:'カシオペアをベースに少しコクをプラス。フルーティーな香りはそのまま、より深い味わいに。'},
+  {name:'星降るブレンド 星ロマン',img:'pk-hoshiroman.webp',en:'HOSHI<br>ROMAN',cat:'b',c:'#6a5acd',tags:['スペシャリティー配合'],url:'dp-seizablend3s60',desc:'カシオペアにスペシャリティーコーヒーを配合。華やかな香りと甘さが加わった贅沢な一杯。'},
+
+  {name:'ブレンド夢浪漫',img:'pk-yumeroman.webp',en:'YUME<br>ROMAN',cat:'c',c:'#9b2d5a',tags:['40周年記念'],url:'dp-yumeroman40',desc:'創業40周年の記念ブレンド。香り・コク・酸味・苦みが調和した、贅沢な味わい。'},
+  {name:'ビタークラシック',img:'pk-bitterclassic.webp',en:'BITTER<br>CLASSIC',cat:'c',c:'#a8141f',tags:['ブラジル','インドネシア'],url:'bitterclassicdripbag',desc:'程よい苦味と濃厚なコク。酸味ひかえめで、毎日飲んでも飽きない本格派。'},
+  {name:'ビターゴールド',img:'pk-bittergold.webp',en:'BITTER<br>GOLD',cat:'c',c:'#c9a04e',k:'#3a2318',tags:['中深煎り','ブラジル','グアテマラ'],url:'dp-bittergold200',desc:'苦すぎないのにコクが深い。香ばしい中深煎りで、厚みのある旨みが続きます。'},
+  {name:'ビジネスブレンド',img:'pk-business.webp',en:'BUSINESS',cat:'c',c:'#1d6b4a',tags:['深煎り','ブラジル','コロンビア'],url:'dp-business50',desc:'苦味と甘味のバランスが絶妙。香ばしく濃厚なコクと、甘く芳醇な香り。'},
+  {name:'豆太のブレンド',img:'pk-mameta.webp',en:'MAMETA',cat:'c',c:'#b5462f',tags:['グアテマラ','カフェオレ向き'],url:'dp-mtb80',desc:'少しビターな味わいと、しっかりしたコク。ミルクとの相性がよく、カフェオレ派に人気。'},
+  {name:'リッチブレンド',img:'pk-rich.webp',en:'RICH',cat:'c',c:'#1e1e1e',tags:['濃厚'],url:'dp-richhello50',desc:'豊かなコクと深い風味のあとに、すっきりとした清涼感。濃厚な味わいを楽しみたい方に。'},
+
+  {name:'ビターブレンド',img:'pk-bitter.webp',en:'BITTER',cat:'d',c:'#5b3a29',tags:['深煎り','インドネシア'],url:'dp-btb50',desc:'香り高いインドネシア産の豆を深煎りに。濃厚なコクと苦味で、カフェオレにもぴったり。'},
+  {name:'濃い味ブレンド',img:'pk-koiaji.webp',en:'KOI-AJI',cat:'d',c:'#8f1d24',tags:['深煎り'],url:'dp-pbb70',desc:'通常の2倍の時間をかけて深煎りにした、本場ヨーロッパスタイル。深いコクでカフェオレにも。'},
+  {name:'ビクトリーブレンド',img:'pk-victory.webp',en:'VICTORY',cat:'d',c:'#2d4c8c',tags:['深煎り'],url:'dp-fv100',desc:'深煎りならではの、濃厚なコク。飲みごたえのある大人のブレンドです。'},
+  {name:'リッチヨーロピアン',img:'pk-richeuropean.webp',en:'RICH<br>EUROPEAN',cat:'d',c:'#6b3f22',tags:['深煎り','5種の豆'],url:'dp-ecb100-k',desc:'ヨーロッパで愛される伝統の味わいを再現。5種の豆を深煎りにした、ほろ苦さとコク。'},
+  {name:'ハウスブレンド',img:'pk-house.webp',en:'HOUSE',cat:'d',c:'#4f5a2e',tags:['深煎り'],url:'dp-house80',desc:'旨みぎゅっと深煎り仕立て。雑味のないキレと、心落ち着くほろ苦さ。'},
+  {name:'オフィスブレンド',img:'pk-office.webp',en:'OFFICE',cat:'d',c:'#1f3a6b',tags:['深煎り'],url:'dp-office80',desc:'通常の2倍の時間でじっくり深煎り。香ばしい香りとしっかりしたコクで、仕事の合間に。'},
+  {name:'ルナブレンド',img:'pk-luna.webp',en:'LUNA',cat:'d',c:'#1b2a55',tags:['銀のドリップ','グアテマラ'],url:'dp-luna60',desc:'「銀のドリップ」。倍以上の時間をかけた焙煎で、しっかりした苦味の中に豆本来の甘みも。'}
+];
+const CAT={a:{n:'まろやか・やさしい',c:'var(--cat-a)'},b:{n:'香り華やか',c:'var(--cat-b)'},c:{n:'バランス・コク',c:'var(--cat-c)'},d:{n:'しっかりビター',c:'var(--cat-d)'}};
+const SHOP='https://item.rakuten.co.jp/sawaicoffee-tea/';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* 長い銘柄名は「ブレンド」などの手前で改行させる */
+const disp=n=>n.startsWith('星降るブレンド ')?'<small>星降るブレンド</small>'+n.slice(8):n.replace(/(ブレンド|ゴールド|クラシック|ヨーロピアン|ジャロ)/g,'<wbr>$1').replace(/^<wbr>ブレンド/,'ブレンド<wbr>');
+/* sm：FVの流れ・箱の演出など小さく動く所は軽い画像（pk-*-s.webp、高さ240px）を使う */
+const bagHTML=(o,sm)=>o.img?`<div class="bag bag-img"><img src="img/${sm?o.img.replace('.webp','-s.webp'):o.img}" alt=""></div>`:`<div class="bag${o.k?' light':''}" style="--c:${o.c};--k:${o.k||'#fff'}"><div class="bag-in"><span class="bag-brand">SAWAI</span><span class="bag-en">${o.en}</span><span class="bag-dot"></span></div></div>`;
+
+/* PCのFV：左の2列にドリップバッグを流す（1列目は上へ、2列目は下へ。同じ並びを2回入れてつなぎ目なくループ） */
+(()=>{
+  const a=coffees,b=coffees.slice(15).concat(coffees.slice(0,15)).reverse();
+  document.getElementById('fvTrack1').innerHTML=(a.map(o=>bagHTML(o,1)).join('')).repeat(2);
+  document.getElementById('fvTrack2').innerHTML=(b.map(o=>bagHTML(o,1)).join('')).repeat(2);
+  flowStrip(document.getElementById('fvTrack1'),'y',-1,70);
+  flowStrip(document.getElementById('fvTrack2'),'y',1,70);
+})();
+/* FVの袋を流す（同じ並びを2回入れた帯を、半分の長さでつなぎ目なくループ）
+   axis：'x'横／'y'縦　dir：-1で左・上へ、1で右・下へ　sec：半周にかける秒数 */
+function flowStrip(el,axis,dir,sec){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  let half=0,pos=0,last=0;
+  // 半周＝2周目の先頭の袋の位置（つなぎ目がずれないよう、袋の位置から測る）
+  const measure=()=>{const k=el.children,h=k[k.length/2];half=h?(axis==='x'?h.offsetLeft-k[0].offsetLeft:h.offsetTop-k[0].offsetTop):0};
+  measure();addEventListener('resize',measure);addEventListener('load',measure);
+  const step=t=>{
+    if(!half)measure();
+    if(last&&half){pos=(pos+half/sec*Math.min(t-last,100)/1000)%half}
+    last=t;
+    const v=dir<0?-pos:pos-half;
+    el.style.transform=axis==='x'?`translate3d(${v}px,0,0)`:`translate3d(0,${v}px,0)`;
+    requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+/* スマホのFV：横に流れる2列（上の列は左へ、下の列は右へ）
+   30種を15袋ずつに分けて各列に入れる（列の幅を短くして、iPhoneで列が消えるのを防ぐ） */
+(()=>{
+  const cell=o=>'<div>'+bagHTML(o,1)+'</div>';
+  const a=coffees.slice(0,15),b=coffees.slice(15).reverse();
+  document.getElementById('spTrack1').innerHTML=(a.map(cell).join('')).repeat(2);
+  document.getElementById('spTrack2').innerHTML=(b.map(cell).join('')).repeat(2);
+  flowStrip(document.getElementById('spTrack1'),'x',-1,50);
+  flowStrip(document.getElementById('spTrack2'),'x',1,50);
+})();
+
+/* ラインナップのカード */
+const grid=document.getElementById('grid');
+grid.innerHTML=coffees.map((o,i)=>`
+  <div class="card" data-cat="${o.cat}">
+    <button type="button" class="card-in" data-i="${i}" aria-haspopup="dialog" aria-label="${o.name}の味わいを見る">
+      <span class="card-no">${String(i+1).padStart(2,'0')}</span>
+      ${bagHTML(o)}
+      <span class="card-cat" style="--cc:${CAT[o.cat].c}">${CAT[o.cat].n}</span>
+      <span class="card-name">${disp(o.name)}</span>
+      <span class="card-tap">味わいを見る<i>＋</i></span>
+    </button>
+  </div>`).join('');
+grid.addEventListener('click',e=>{
+  const b=e.target.closest('.card-in');if(b)openCoffee(+b.dataset.i);
+});
+
+/* 銘柄のポップアップ（前へ・次へは、絞り込み中の銘柄だけを順番に） */
+const dlg=document.getElementById('cdlg');let dlgIdx=0;
+const $=id=>document.getElementById(id);
+const shownList=()=>[...grid.querySelectorAll('.card:not(.hide) .card-in')].map(b=>+b.dataset.i);
+function renderCoffee(i,anim){
+  dlgIdx=i;const o=coffees[i],no=String(i+1).padStart(2,'0');
+  const k=o.desc.indexOf('。'),hook=k>=0?o.desc.slice(0,k+1):o.desc,rest=k>=0?o.desc.slice(k+1):'';
+  dlg.style.setProperty('--cc',CAT[o.cat].c);
+  $('cdlgNo').textContent=no;
+  $('cdlgLbl').innerHTML=`<b>NO.${no}</b><span>${CAT[o.cat].n}</span>`;
+  $('cdlgName').textContent=o.name;
+  $('cdlgHook').textContent=hook;
+  $('cdlgDesc').textContent=rest;$('cdlgDesc').hidden=!rest;
+  $('cdlgTags').innerHTML=o.tags.map(t=>`<span>${t}</span>`).join('');
+  $('cdlgLink').href=SHOP+o.url+'/';
+  const bag=$('cdlgBag');bag.innerHTML=bagHTML(o);bag.classList.remove('in');if(anim){void bag.offsetWidth;bag.classList.add('in')}
+  const list=shownList(),p=list.indexOf(i);
+  $('cdlgPos').textContent=p>=0?`${p+1} / ${list.length}`:`${i+1} / 30`;
+}
+function openCoffee(i){
+  renderCoffee(i,dlg.open);
+  if(!dlg.open){dlg.showModal();document.documentElement.style.overflow='hidden'}
+}
+function stepCoffee(d){
+  let list=shownList();if(list.indexOf(dlgIdx)<0)list=coffees.map((_,i)=>i);
+  renderCoffee(list[(list.indexOf(dlgIdx)+d+list.length)%list.length],true);
+}
+$('cdlgPrev').addEventListener('click',()=>stepCoffee(-1));
+$('cdlgNext').addEventListener('click',()=>stepCoffee(1));
+const closeDlg=()=>{dlg.close();document.documentElement.style.overflow=''};
+$('cdlgX').addEventListener('click',closeDlg);
+dlg.addEventListener('click',e=>{if(e.target===dlg)closeDlg()});  // 外側（背景）をタップで閉じる
+dlg.addEventListener('keydown',e=>{if(e.key==='ArrowRight')stepCoffee(1);if(e.key==='ArrowLeft')stepCoffee(-1)});
+dlg.addEventListener('close',()=>{document.documentElement.style.overflow=''});  // Escキーで閉じたとき
+
+/* 絞り込み */
+const cards=[...grid.children];
+function showCards(cat){
+  let n=0;
+  cards.forEach(c=>{
+    const ok=cat==='all'||c.dataset.cat===cat;
+    c.classList.toggle('hide',!ok);c.classList.remove('pop');
+    if(ok){void c.offsetWidth;c.style.setProperty('--dl',(n++*0.04)+'s');c.classList.add('pop')}
+  });
+}
+document.getElementById('filters').addEventListener('click',e=>{
+  const b=e.target.closest('.ft');if(!b)return;
+  document.querySelectorAll('.ft').forEach(x=>x.classList.toggle('on',x===b));
+  showCards(b.dataset.cat);
+});
+
+/* 4タイプの銘柄リスト */
+['a','b','c','d'].forEach(k=>{
+  document.getElementById('ty'+k.toUpperCase()).onclick=e=>{const b=e.target.closest('button[data-i]');if(b)openCoffee(+b.dataset.i)};
+  document.getElementById('ty'+k.toUpperCase()).innerHTML=coffees.filter(o=>o.cat===k).map(o=>`<li><button type="button" data-i="${coffees.indexOf(o)}" aria-haspopup="dialog">${o.name.replace('星降るブレンド ','')}</button></li>`).join('');
+});
+
+/* 「30 DAYS, 30 COFFEES!」を1文字ずつ出す */
+const msgBig=document.getElementById('msgBig');let ci=0;
+msgBig.querySelectorAll('.ln').forEach(ln=>{
+  ln.innerHTML=[...ln.textContent].map(c=>c===' '?'<span class="sp"></span>':`<span class="ch" aria-hidden="true" style="--i:${ci++}">${c}</span>`).join('');
+});
+new IntersectionObserver((es,ob)=>es.forEach(e=>{if(e.isIntersecting){msgBig.classList.add('on');ob.disconnect()}}),{threshold:.4}).observe(msgBig);
+
+/* FV：30から数える＋袋が箱に落ちる → 30袋そろったらパーン！と飛び出す */
+let boxCount=document.getElementById('boxCount');const box=document.getElementById('box'),stage=document.getElementById('stage'),burstLayer=document.getElementById('burstLayer'),bouquet=document.getElementById('bouquet');
+const fvR=stage.parentNode;
+const photoBags=coffees.filter(o=>o.img);
+let dropped=0,launched=0,dropTimer=null,busy=false;
+function dropOne(){
+  const o=photoBags[launched++%photoBags.length];
+  const d=document.createElement('div');d.className='drop';
+  d.innerHTML=bagHTML(o,1);
+  const w=stage.clientWidth,h=stage.clientHeight;
+  d.style.left=(w*0.5-29+(Math.random()-0.5)*w*0.36)+'px';
+  d.style.setProperty('--y',(h*0.62)+'px');
+  d.style.setProperty('--r0',(Math.random()*60-30)+'deg');
+  d.style.setProperty('--r1',(Math.random()*40-20)+'deg');
+  d.style.setProperty('--t',(1.1+Math.random()*0.5)+'s');
+  stage.appendChild(d);
+  d.addEventListener('animationend',()=>{
+    d.remove();
+    if(dropped<30){dropped++;boxCount.textContent=dropped}
+    box.classList.remove('bump');void box.offsetWidth;box.classList.add('bump');
+    if(dropped===30&&!stage.querySelector('.drop'))setTimeout(burst,350);
+  });
+}
+function burst(){
+  const R=fvR.getBoundingClientRect(),B=box.getBoundingClientRect();
+  const w=R.width,h=R.height,ox=B.left-R.left+B.width/2,oy=B.top-R.top+B.height*0.15;
+  const size=w<500?34:50;
+  box.classList.remove('bump');box.classList.add('charge');
+  setTimeout(()=>{
+    box.classList.remove('charge');box.classList.add('open');
+    const fc=document.getElementById('fvCount');fc.textContent='ALL STARS 30';fc.classList.add('done');
+    // 光の輪
+    const f=document.createElement('div');f.className='flash';f.style.left=ox+'px';f.style.top=oy+'px';
+    fvR.appendChild(f);f.addEventListener('animationend',()=>f.remove());
+    // 紙吹雪
+    const cols=['#c4161c','#c9a04e','#e58a5f','#d4628b','#3a2318','#7fae5a'];
+    for(let i=0;i<36;i++){
+      const c=document.createElement('div');c.className='conf';
+      const a=Math.random()*Math.PI*2,r=120+Math.random()*w*0.45;
+      c.style.cssText=`left:${ox}px;top:${oy}px;background:${cols[i%6]};--cx:${Math.cos(a)*r}px;--cy:${Math.sin(a)*r*0.8+80}px;--cr:${Math.random()*720-360}deg;--t:${1.2+Math.random()*0.8}s`;
+      fvR.appendChild(c);c.addEventListener('animationend',()=>c.remove());
+    }
+    // 15袋を、箱に刺さった状態で扇形に飛び出させる
+    const BQ=['mild','light','anniversary','mellow','hello','yakumo','mocha','premiumgold','cassiopeia','southerncross','yumeroman','bitterclassic','rich','bitter','richeuropean'];
+    const inBox=BQ.map(k=>coffees.find(o=>o.img==='pk-'+k+'.webp'));
+    const bw=B.width,bs=bw*0.3,nb=7,nf=inBox.length-nb;  // 後ろの列7袋＋手前の列8袋
+    bouquet.innerHTML='';burstLayer.innerHTML='';
+    inBox.forEach((o,i)=>{
+      const back=i<nb,j=back?i:i-nb,t=j/((back?nb:nf)-1)-0.5;
+      const el=document.createElement('div');el.className='bq';
+      const sz=bs*(back?0.92:1)*(0.92+Math.random()*0.16);
+      el.style.cssText=`--s:${sz}px;--x:${t*bw*(back?0.74:0.92)+(back?bw*0.03:0)}px;--rise:${(back?sz*1.2:sz*0.62)+Math.random()*sz*0.2-Math.abs(t)*sz*0.35}px;--r:${t*(back?46:64)+(Math.random()*10-5)}deg;transition-delay:${0.05+Math.random()*0.25}s`;
+      el.innerHTML='<div>'+bagHTML(o,1)+'</div>';
+      bouquet.appendChild(el);
+    });
+    void burstLayer.offsetWidth;setTimeout(()=>document.querySelectorAll('.burst,.bq').forEach(el=>el.classList.add('out')),30);
+    busy=false;
+  },reduce?0:700);
+}
+function startFV(){
+  busy=true;dropped=0;launched=0;
+  burstLayer.innerHTML='';bouquet.innerHTML='';box.classList.remove('open');
+  const fc=document.getElementById('fvCount');fc.classList.remove('done');fc.innerHTML='<span id="boxCount">0</span> / 30 袋';
+  boxCount=document.getElementById('boxCount');
+  if(reduce){dropped=30;burst();return}
+  let i=0;clearInterval(dropTimer);
+  dropTimer=setInterval(()=>{dropOne();if(++i>=30)clearInterval(dropTimer)},110);
+}
+// 箱をタップするともう一度
+box.addEventListener('click',()=>{if(!busy)startFV()});
+// 演出の場所までスクロールしたら開始
+new IntersectionObserver((es,ob)=>es.forEach(e=>{if(e.isIntersecting){startFV();ob.disconnect()}}),{threshold:.35}).observe(fvR);
+
+/* スマホのハンバーガーメニュー */
+const hdEl=document.getElementById('hd'),burger=document.getElementById('hdBurger');
+const setMenu=on=>{hdEl.classList.toggle('menu-on',on);burger.setAttribute('aria-expanded',on);burger.setAttribute('aria-label',on?'メニューを閉じる':'メニューを開く');document.documentElement.style.overflow=on?'hidden':''};
+burger.addEventListener('click',()=>setMenu(!hdEl.classList.contains('menu-on')));
+document.getElementById('hdNav').addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&hdEl.classList.contains('menu-on'))setMenu(false)});
+
+/* ヘッダー・固定ボタン */
+const hd=document.getElementById('hd'),fix=document.getElementById('fix'),spec=document.getElementById('spec');
+addEventListener('scroll',()=>{
+  const y=scrollY;hd.classList.toggle('solid',y>innerHeight*0.6);
+  const s=spec.getBoundingClientRect();
+  fix.classList.toggle('on',y>innerHeight*0.8&&(s.top>innerHeight||s.bottom<0));
+},{passive:true});
+
+/* スクロールで表示＋数字のカウントアップ */
+function countUp(el){
+  const to=+el.dataset.to,sm=el.querySelector('small');const tail=sm?sm.outerHTML:'';
+  if(reduce){el.innerHTML=to+tail;return}
+  const st=performance.now();
+  (function f(now){const p=Math.min((now-st)/1200,1);el.innerHTML=Math.round(to*(1-Math.pow(1-p,3)))+tail;if(p<1)requestAnimationFrame(f)})(st);
+}
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  e.target.classList.add('on');
+  e.target.querySelectorAll('[data-to]').forEach(countUp);
+  io.unobserve(e.target);
+}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const io2=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;showCards('all');io2.disconnect();
+}),{threshold:.05});
+io2.observe(grid);
+
+/* 本日の澤井珈琲おすすめ
+   日本時間の日付で銘柄が決まる（その日はだれが見ても同じ）。毎日0時に切り替わり、
+   30種を決まった順に1日1種ずつ回すので、30日間は同じ銘柄が出ない */
+function todayPick(){
+  const day=Math.floor((Date.now()+9*36e5)/864e5);  // 日本時間の通算日
+  let a=12345;const rnd=()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+  const order=coffees.map((_,i)=>i);
+  for(let i=order.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[order[i],order[j]]=[order[j],order[i]]}
+  return coffees[order[day%order.length]];
+}
+(()=>{const d=new Date(Date.now()+9*36e5);document.getElementById('rlDate').textContent=`TODAY'S COFFEE ${d.getUTCMonth()+1}/${d.getUTCDate()}`})();
+/* 本日のおすすめ（演出） */
+const rl=$('rl'),rlBody=$('rlBody'),rlBtn=$('rlBtn');
+const noOf=o=>String(coffees.indexOf(o)+1).padStart(2,'0');
+function rlConfetti(){
+  const cols=['#c4161c','#c9a04e','#e58a5f','#d4628b','#3a2318','#7fae5a'],r=rl.getBoundingClientRect();
+  for(let i=0;i<30;i++){
+    const c=document.createElement('div');c.className='conf';
+    const a=-Math.PI*(0.1+Math.random()*0.8),d=120+Math.random()*r.width*0.5;
+    c.style.cssText=`left:50%;top:40%;background:${cols[i%6]};--cx:${Math.cos(a)*d}px;--cy:${Math.sin(a)*d+60}px;--cr:${Math.random()*720-360}deg;--t:${1+Math.random()*0.8}s`;
+    rl.appendChild(c);c.addEventListener('animationend',()=>c.remove());
+  }
+}
+let rlShown=null;  // 表示済みなら、ボタンで銘柄の詳しいポップアップを開く
+rlBtn.addEventListener('click',()=>{
+  if(rlShown){openCoffee(coffees.indexOf(rlShown));return}
+  rlBtn.disabled=true;rlBtn.textContent='本日のおすすめを選んでいます…';
+  const win=todayPick();
+  let step=0,speed=45;const total=reduce?1:24;
+  (function tick(){
+    if(++step<total){
+      const o=coffees[Math.floor(Math.random()*coffees.length)];
+      rlBody.innerHTML=`<div class="rl-spin" aria-hidden="true">${bagHTML(o,1)}<div><b>${noOf(o)}</b><span>${disp(o.name)}</span></div></div>`;
+      speed+=step>total-8?40:3;setTimeout(tick,speed);return;
+    }
+    // 決まった一杯（ルーレット後の表示）
+    rlBody.innerHTML=`<div class="rl-res"><div>${bagHTML(win)}</div><div>
+      <div class="lbl">本日の澤井珈琲おすすめは…</div><b class="rl-no">NO.${noOf(win)}</b><h3>${disp(win.name)}</h3><p>${win.desc}</p></div></div>`;
+    if(!reduce)rlConfetti();
+    rlBtn.disabled=false;rlBtn.textContent='この銘柄を詳しく見る';rlShown=win;
+  })();
+});
+</script>
+</body>
+</html>
