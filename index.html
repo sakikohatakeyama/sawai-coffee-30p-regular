@@ -220,14 +220,6 @@ html{scroll-padding-top:72px}
 .bag-img img{width:100%;height:auto;max-height:100%;object-fit:contain;filter:drop-shadow(0 6px 8px rgba(58,35,24,.35))}
 
 /* ===== 価格・内容 ===== */
-.brief{position:relative;overflow:hidden;padding:70px 0 80px;background:var(--red) repeating-linear-gradient(-45deg,rgba(255,255,255,.06) 0 14px,transparent 14px 28px)}
-.brief::before,.brief::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(201,160,78,.45),transparent 70%);pointer-events:none}
-.brief::before{left:-80px;top:-90px}.brief::after{right:-70px;bottom:-110px}
-.brief-hd{position:relative;text-align:center;color:var(--white);margin:0}
-.brief-hd small{display:inline-block;font-family:var(--num);font-weight:700;font-size:13px;letter-spacing:.3em;color:var(--gold)}
-.brief-hd h2{font-size:clamp(26px,3.2vw,40px);font-weight:800;line-height:1.4;letter-spacing:.04em}
-.brief-hd h2 .sub{display:block;font-size:.62em;letter-spacing:.08em}
-.brief-hd h2 em{display:block;font-style:normal;color:#ffe08a;white-space:nowrap;font-size:1.45em;line-height:1.2;margin-top:4px}
 .sp-br{display:none}
 /* 開始前・終了後は見出しの文言が長いので少し小さく */
 /* カウントダウン */
@@ -239,25 +231,6 @@ html{scroll-padding-top:72px}
 .cd-u{font-size:15px;font-weight:800;margin-right:4px}
 .cd.end{display:none}
 /* 価格・内容のカード */
-.rsv{position:relative;max-width:720px;margin:40px auto 0;background:var(--white);border-radius:24px;padding:44px 56px 46px;color:var(--ink);box-shadow:0 24px 40px -22px rgba(80,0,0,.55)}
-.rsv-top{text-align:center}
-.rsv-badge{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:var(--white);font-weight:800;font-size:16px;border-radius:999px;padding:4px 18px}
-.rsv-badge i{width:9px;height:9px;border-radius:50%;background:#ffe08a;animation:blink 1.4s infinite}
-.rsv-name{font-size:30px;font-weight:800;line-height:1.35;color:var(--brown);margin-top:14px}
-.rsv-name small{display:block;font-size:16px;font-weight:700;color:var(--brown-lt);margin-bottom:2px}
-.rsv-price{text-align:center;margin-top:22px;padding:22px 0 24px;border-top:1px solid var(--cream-dk);border-bottom:1px solid var(--cream-dk)}
-.rsv-price .lbl{display:block;font-size:17px;font-weight:800;color:var(--red)}
-.rsv-price b{font-family:var(--num);font-weight:700;font-size:84px;line-height:1.05;color:var(--red);letter-spacing:-.01em}
-.rsv-price .yen{font-size:24px;font-weight:800;color:var(--red);margin-left:4px}
-.rsv-price .yen small{font-size:16px;color:var(--ink);font-weight:700}
-.rsv-tags{display:flex;justify-content:center;gap:10px;margin-top:10px}
-.rsv-tags span{font-size:17px;font-weight:800;border:2px solid var(--red);color:var(--red);border-radius:6px;padding:2px 14px}
-.rsv-list{margin-top:8px}
-.rsv-list>div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 4px;border-bottom:1px solid var(--cream-dk)}
-.rsv-list dt{font-size:16px;font-weight:800;color:var(--brown-lt)}
-.rsv-list dd{font-size:19px;font-weight:700;line-height:1.6}
-.rsv-btn{position:relative;overflow:hidden;display:block;max-width:420px;margin:30px auto 0;background:var(--red);color:var(--white);font-weight:800;font-size:22px;text-align:center;border-radius:999px;padding:20px 10px;text-decoration:none;box-shadow:0 6px 0 var(--red-dk);animation:tkPulse 1.8s ease-in-out infinite}
-.rsv-btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-20deg);animation:shine 2.6s ease-in-out infinite}
 @keyframes shine{0%,55%{left:-60%}100%{left:130%}}
 @keyframes tkPulse{50%{transform:scale(1.05)}}
 
@@ -500,7 +473,6 @@ html{scroll-padding-top:72px}
   .pc-br{display:none}
   .msg h2{font-size:32px;line-height:1.45}
   .sec-hd h2{font-size:32px}
-  .brief-hd h2{font-size:28px}
   .type h3{font-size:26px}
   .how .sec-hd h2{font-size:34px}
   .spec .sec-hd h2{font-size:26px}
@@ -527,23 +499,10 @@ html{scroll-padding-top:72px}
   .spec-box td{font-size:17px}
   .spec-box td b{font-size:36px}
   .spec-box td{padding:2px 0 14px;border-bottom:1px solid var(--cream-dk)}
-  .brief{padding:50px 0 46px}
-  .brief-hd{margin-top:0}
-  .rsv{margin-top:28px;padding:30px 20px 30px;border-radius:18px}
-  .rsv-name{font-size:23px}
-  .rsv-name small{font-size:14px}
-  .rsv-price b{font-size:60px}
-  .rsv-price .yen{font-size:20px}
-  .rsv-tags span{font-size:15px}
-  .rsv-list>div{grid-template-columns:1fr;gap:2px;padding:12px 2px}
-  .rsv-list dt{font-size:15px}
-  .rsv-list dd{font-size:20px;line-height:1.55}
-  .rsv-btn{font-size:19px;padding:17px 10px}
   .fix{display:block;left:0;right:0;bottom:0}
   .fix a{border-radius:0;background:#1a1a1a;padding:18px 16px calc(18px + env(safe-area-inset-bottom));font-size:17px;letter-spacing:.06em;box-shadow:0 -4px 16px rgba(0,0,0,.18)}
 }
 @media (prefers-reduced-motion:reduce){
-  .rsv-btn,.rsv-btn::after,.rsv-badge i{animation:none!important}
   .msg-big .ch{opacity:1;transform:none}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .rv{opacity:1;transform:none}
@@ -559,7 +518,6 @@ html{scroll-padding-top:72px}
   <nav class="hd-nav" id="hdNav" aria-label="メニュー">
     <ul>
       <li><a href="#story">30種の飲み比べ</a></li>
-      <li><a href="#reserve">価格・内容</a></li>
       <li><a href="#lineup">30種ラインナップ</a></li>
       <li><a href="#pick">本日のおすすめ</a></li>
       <li><a href="#types">味わいタイプ</a></li>
@@ -589,7 +547,6 @@ html{scroll-padding-top:72px}
 <nav class="pc-nav" aria-label="ページ内メニュー">
   <ul>
     <li><a href="#story">30種の飲み比べ</a></li>
-    <li><a href="#reserve">価格・内容</a></li>
     <li><a href="#lineup">30種ラインナップ</a></li>
     <li><a href="#pick">本日のおすすめ</a></li>
     <li><a href="#types">味わいタイプ</a></li>
@@ -640,33 +597,6 @@ html{scroll-padding-top:72px}
     1日1袋で、ちょうどひと月。<br>
     きっと「わたしの一杯」が見つかります。
   </p>
-</section>
-
-<!-- ===== 価格・内容 ===== -->
-<section class="brief" id="reserve" aria-label="オールスターズ30の価格・内容">
-  <div class="wrap">
-    <div class="brief-hd rv">
-      <small>PRICE</small>
-      <h2><span class="sub">ドリップバッグ30袋入り</span><em>好評発売中！</em></h2>
-    </div>
-    <div class="rsv rv d1">
-      <div class="rsv-top">
-        <span class="rsv-badge"><i></i><span>好評発売中</span></span>
-        <p class="rsv-name"><small>澤井珈琲ドリップコーヒー</small>オールスターズ30</p>
-      </div>
-      <div class="rsv-price">
-        <span class="lbl">販売価格</span>
-        <b>2,700</b><span class="yen">円<small>（税込）</small></span>
-        <div class="rsv-tags"><span>送料無料</span></div>
-      </div>
-      <!-- 内容・発売日（下の商品概要も同じ内容） -->
-      <dl class="rsv-list">
-        <div><dt>内容</dt><dd>ドリップバッグ 30袋入り<br class="sp-br">（30種×各1袋）</dd></div>
-        <div><dt>発売日</dt><dd>11月15日（日）</dd></div>
-      </dl>
-      <a class="rsv-btn" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">今すぐ購入する</a>
-    </div>
-  </div>
 </section>
 
 <!-- ===== フルスクリーンの写真（photo.jpg） ===== -->
