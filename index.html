@@ -95,7 +95,7 @@ html{scroll-padding-top:72px}
   .hd-nav a:hover{text-decoration:none}
   .hd-nav-cta{display:block!important;margin-top:28px;text-align:center;background:var(--white);color:#d0121c!important;border-radius:999px;padding:16px!important;font-weight:800}
 }
-/* スマホ：FVの下の「ご購入はこちら」ボタン（FVの背景と同じ赤） */
+/* スマホ：FVの下の「商品購入はこちら」ボタン（FVの背景と同じ赤） */
 .sp-cta{display:none}
 @media (max-width:768px){
   .sp-cta{display:block;background:var(--cream);padding:22px 16px 6px}
@@ -507,6 +507,41 @@ html{scroll-padding-top:72px}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .rv{opacity:1;transform:none}
 }
+
+/* ===== 文字を全体的に大きく（通常販売版） ===== */
+.sec-hd .en,.play-en,.rl-en{font-size:16px}
+.sec-hd p{font-size:18px}
+.msg p{font-size:clamp(17px,1.6vw,20px)}
+.lu-note{font-size:15px}
+.ft{font-size:16px}
+.card-name{font-size:17px}.card-name small{font-size:12.5px}.card-cat{font-size:12.5px}.card-tap{font-size:12.5px}
+.play h2{font-size:clamp(36px,4.6vw,60px)}
+.play p{font-size:21px}
+.play .note{font-size:17px;opacity:.9}
+.rl .rl-ttl{font-size:31px}.rl .rl-sub{font-size:18px}
+.rl-res .lbl{font-size:15px}.rl-res h3{font-size:30px}.rl .rl-res p{font-size:16.5px}.rl-spin span{font-size:21px}
+.rl-btn{font-size:21px}
+.how-item .stp{font-size:15px}.how-item h3{font-size:23px}.how-item p{font-size:17px}
+.type .n{font-size:15px}.type p{font-size:17.5px}.type li button{font-size:14px}
+.spec-cta .btn{font-size:21px}.spec-cta p{font-size:16px}
+.ft-end{font-size:15px}.ft-top{font-size:17px}
+@media (max-width:768px){
+  .sec-hd .en,.play-en,.rl-en{font-size:14px}
+  .sec-hd p{font-size:16.5px}
+  .msg p{font-size:17px}
+  .filters .ft{font-size:15px}
+  .card-name{font-size:15.5px}
+  .play h2{font-size:40px}
+  .play p{font-size:17px}
+  .play .note{font-size:15px}
+  .rl .rl-ttl{font-size:24px}.rl .rl-sub{font-size:16px}
+  .rl-res h3{font-size:23px}.rl .rl-res p{font-size:15px}
+  .rl-btn{font-size:18px}
+  .how-item h3{font-size:21px}.how-item p{font-size:16px}
+  .type p{font-size:16.5px}
+  .spec-box th{font-size:15px}.spec-box td{font-size:18px}
+  .spec-cta .btn{font-size:19px}
+}
 </style>
 </head>
 <body>
@@ -524,10 +559,10 @@ html{scroll-padding-top:72px}
       <li><a href="#how">楽しみ方</a></li>
       <li><a href="#spec">商品概要</a></li>
     </ul>
-    <a class="hd-nav-cta" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">ご購入はこちら</a>
+    <a class="hd-nav-cta" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">商品購入はこちら</a>
   </nav>
   <!-- ▼ 購入URL：オールスターズ30の商品ページURLに差し替え -->
-  <a class="hd-cta" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">ご購入はこちら</a>
+  <a class="hd-cta" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">商品購入はこちら</a>
   <button type="button" class="hd-burger" id="hdBurger" aria-label="メニューを開く" aria-expanded="false" aria-controls="hdNav"><span></span><span></span><span></span></button>
 </header>
 
@@ -565,7 +600,7 @@ html{scroll-padding-top:72px}
     <img class="fv-sp-cup" src="img/fv-sp-cup.webp" width="800" height="783" alt="" aria-hidden="true">
   </div>
 </section>
-<div class="sp-cta"><a href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">ご購入はこちら</a></div>
+<div class="sp-cta"><a href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">商品購入はこちら</a></div>
 
 
 
@@ -719,8 +754,6 @@ html{scroll-padding-top:72px}
         <tr><th>販売価格</th><td><b>2,700</b>円（税込）</td></tr>
         <tr><th>送料</th><td>送料無料</td></tr>
         <tr><th>内容量</th><td>ドリップバッグ 30袋（30種類×各1袋）</td></tr>
-        <!-- 発売日 -->
-        <tr><th>発売日</th><td>11月15日（日）</td></tr>
       </table>
       <div class="spec-cta">
         <!-- ▼ 購入URL：オールスターズ30の商品ページURLに差し替え -->
@@ -736,7 +769,7 @@ html{scroll-padding-top:72px}
   <small>&copy; SAWAI COFFEE</small>
 </footer>
 
-<div class="fix" id="fix"><a href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">ご購入はこちら</a></div>
+<div class="fix" id="fix"><a href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-allstars30/">商品購入はこちら</a></div>
 
 <!-- ===== 銘柄のポップアップ ===== -->
 <dialog class="cdlg" id="cdlg" aria-labelledby="cdlgName">
